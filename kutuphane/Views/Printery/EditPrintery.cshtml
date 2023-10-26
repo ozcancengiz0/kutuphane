@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model PrinteryModel
+<form method="post">
+    <div class="row mb-4">
+        <div class="col">
+            <div class="form-outline">
+                <input type="hidden" name="PrinteryId" value="@Model.PrinteryId" />
+                <input type="text" value="@Model.PrinteryName" name="PrinteryName"  class="form-control" />
+                <label class="form-label" for="PrinteryName">Printery Name</label>
+
+                <input type="text" value="@Model.PrinteryDescription" name="PrinteryDescription" class="form-control" />
+                <label class="form-label" for="PrinteryDescription">Printery Description </label>
+
+                <input type="text" value="@Model.PrinteryMail" name="PrinteryMail" class="form-control" />
+                <label class="form-label" for="PrinteryMail"> Printery Mail</label>
+
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" value="@Model.PrinteryAdress" name="PrinteryAdress" class="form-control" />
+                <label class="form-label" for="PrinteryAdress">Printery Adress</label>
+
+                <input type="text" value="@Model.PrinteryPhone" name="PrinteryPhone" class="form-control" />
+                <label class="form-label" for="PrinteryPhone"> Printery Phone</label>
+
+                <input type="text" value="@Model.PrinteryIBAN" name="PrinteryIBAN" class="form-control" />
+                <label class="form-label" for="PrinteryIBAN">Printery IBAN</label>
+            </div>
+        </div>
+    </div>
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
